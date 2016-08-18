@@ -1,0 +1,22 @@
+(phz) {16-08-18 15:34}tiamat-red:~/system/dotfiles@master leonardo% rake install
+git/gitconfig.symlink
+git/gitignore.symlink
+shell/inputrc.symlink
+latex/latexmkrc.symlink
+tmux/tmux.conf.symlink
+zsh/zshrc.symlink
+hg/hgignore_global.symlink
+hg/hgrc.symlink
+slate/slate.symlink
+osx/set-defaults.sh.symlink
+vim/vimrc.local.symlink
+vim/vimrc.before.local.symlink
+vim/vimrc.bundles.local.symlink
+aliases.symlink
+globalenv.symlink
+python/pythonstartup.py.symlink
+python/pdbrc.symlink
+File already exists: /home/leonardo/.zshrc, what do you want to do? [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all
+^Crake aborted!
+Interrupt: 
+
