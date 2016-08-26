@@ -50,7 +50,7 @@ ZSH_THEME="dallas"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git vi-mode)
 
 # User configuration
 
@@ -96,9 +96,12 @@ export ETS_TOOLKIT=qt4
 
 source ~/perl5/perlbrew/etc/bashrc
 
-export freesurfer_home=/home/leonardo/freesurfer-dev/
-export subjects_dir=/data/nccam/mri/
+export FREESURFER_HOME=/home/leonardo/freesurfer/
+export SUBJECTS_DIR=/data/nccam/MRI/
 
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 
 stty stop undef
+
+bindkey -v
+

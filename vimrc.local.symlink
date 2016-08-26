@@ -1,15 +1,23 @@
 let g:pymode_run_bind = '<leader>r'
 let g:pymode_folding = 0
+let g:spf13_noninvasive_completion = 0
 "let g:pymode_python = 'python2.7'
 "let g:solarized_termtrans=0
 "let g:solarized_contrast="normal"
 "let g:solarized_visibility="normal"
+
+let g:miniBufExplBRSplit = 0
+
 set nofoldenable    " disable folding"
 set background=dark
 colorscheme solarized
+
 vnoremap <silent> # :s#^#\##<cr>:noh<cr>
 vnoremap <silent> -# :s#^\###<cr>:noh<cr>
+
 let g:indent_guides_enable_on_vim_startup = 0
+
+set autowrite
 
 " vim-unimpaired {
 
@@ -37,4 +45,17 @@ let g:indent_guides_enable_on_vim_startup = 0
 
   " }
 
+" Moved to after/plugins/zzzmapings.vim because of wildblah plugin
+" nmap <CR> <C-s>/^[^#]<CR>:noh<CR>
+
+let g:ycm_python_binary_path = '/home/leonardo/anaconda2/envs/phz/bin/python'
+
+set number
+set relativenumber
+
+map <C-n> :NERDTreeToggle<CR>
+
+"Plugin 'cjrh/vim-conda'
+
+" autocmd vimenter * NERDTree
 
